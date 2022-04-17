@@ -26,6 +26,12 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <!-- Template Main CSS Contactus -->
+    <link
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    rel="stylesheet"
+    type="text/css"
+    />
     </head>
 
   <body>
@@ -730,7 +736,7 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <form action="https://formspree.io/f/xrgjyydq" method="post" class="php-email-form">
+              <form id="contact-form" action="https://formspree.io/f/xrgjyydq" method="POST">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
@@ -747,10 +753,10 @@
                 </div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                  </div>
+                <div class="text-center"><button type="submit"
+              class="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Send Message</button>
+		</div>
               </form>
             </div>
           </div>
